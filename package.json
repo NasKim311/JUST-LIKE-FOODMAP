@@ -1,20 +1,33 @@
 {
-  "name": "justlikefoodmap",
+  "name": "just-like-foodmap",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next --port 3011",
     "build": "next build",
-    "start": "next start",
+    "start": "next start --port 3011",
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.1.3"
+    "@formatjs/intl-localematcher": "0.2.32",
+    "@reduxjs/toolkit": "^1.9.5",
+    "moment": "^2.29.4",
+    "next": "^13.5.6",
+    "react": "^18.2.0",
+    "react-cookie": "^4.1.1",
+    "react-dom": "^18.2.0",
+    "negotiator": "0.6.3",
+    "mobile-detect": "^1.4.5"
   },
   "devDependencies": {
-    "eslint": "^8",
-    "eslint-config-next": "14.1.3"
+    "@types/jquery": "^3.5.16",
+    "@types/negotiator": "0.6.1",
+    "@types/node": "^18.11.5",
+    "@types/react": "^18.2.8",
+    "@types/react-dom": "^18.0.7",
+    "eslint": "^8.48.0",
+    "eslint-config-next": "^13.4.19",
+    "jquery": "^3.7.1",
+    "typescript": "^5.1.3"
   }
 }
