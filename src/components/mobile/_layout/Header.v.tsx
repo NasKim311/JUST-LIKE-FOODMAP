@@ -10,9 +10,24 @@ const HeaderV = ({
     params: object
 }) => (
     <>
-        <main id="main" className="container login">
-            <div> 헤더입니다.</div>
-        </main>
+        <nav>
+            <Link 
+                className="logo-aTag"
+                href="/" 
+            >
+                <div className="logo-box">
+                    JUST-LIKE-WE
+                </div>
+            </Link>
+
+            <Link
+                href='#'
+            >
+                <div className="menu-box">
+                    <img src="assets/images/logo/menu-button.png" />
+                </div>
+            </Link>
+        </nav>
     </>
 )
 

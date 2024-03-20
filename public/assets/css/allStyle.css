@@ -1,0 +1,15 @@
+html,
+body {
+  background: linear-gradient(180deg, #5cc5f6 35%, #046795 100%);
+  margin: 0%;
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  margin: 10px;
+}
+
+footer {
+  margin: 10px;
+}

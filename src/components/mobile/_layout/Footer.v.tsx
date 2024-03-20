@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 const FooterV = ({
-    t, 
+    t,
     locale,
     params,
 }: {
@@ -10,9 +10,21 @@ const FooterV = ({
     params: object
 }) => (
     <>
-        <main id="main" className="container login">
-            <div> 푸터입니다.</div>
-        </main>
+        <footer id="footer" className="footer">
+            <section className="content">
+                <div className="">
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="card">
+                                <div className="card-body">
+                                    푸터입니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
     </>
 )
 

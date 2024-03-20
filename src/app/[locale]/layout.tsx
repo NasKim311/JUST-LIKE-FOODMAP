@@ -10,7 +10,9 @@ import dynamic from 'next/dynamic'
 import Script from 'next/script'
 import Head from 'next/head'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'public/assets/css/style.css';
+import 'public/assets/css/allStyle.css';
+// import 'public/assets/css/pcStyle.css';
+import 'public/assets/css/moStyle.css';
 
 export async function generateStaticParams() {
     const locales = i18n.locales.map(locale => ({ locale: locale }))

@@ -1,0 +1,53 @@
+.mo .logo-aTag {
+  text-decoration: none;
+}
+
+.mo .logo-box {
+  color: #fefefe;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  padding-top: 10px;
+  float: left;
+}
+
+.mo .menu-box {
+  text-align: right;
+  padding-top: 10px;
+}
+
+.mo .main-container {
+  font-family: arial;
+  margin: 25px;
+  width: 350px;
+  height: 200px;
+  position: relative;
+}
+.mo .main-cover {
+  background-color: #0584bb;
+  background: linear-gradient(180deg, #0584bb 35%, #046795 100%);
+  padding-bottom: 170px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fefefe;
+  height: 100%;
+  width: 100%;
+}
+
+.mo .title-box {
+  font-size: 35px;
+  line-height: 50px;
+}
+
+.mo .title-box .title-logo {
+  padding: 10px;
+}
+
+.mo .title-box .sentence {
+  font-weight: bold;
+}
+
+.mo .select-box {
+  display: flex;
+  flex-wrap: wrap;
+}
