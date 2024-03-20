@@ -4,15 +4,18 @@ import { useRef, useState, useEffect } from 'react'
 import MainV from './Main.v'
 import PageUtil from '@utils/Page.util'
 
+
 interface Params {
     error: any
     isLoaded: boolean
+
 }
 
 function Main(props: any) {
     let initParams: Params = {
         error: null,
         isLoaded: false,
+
     }
     const [params, setParams] = useState(initParams)
 

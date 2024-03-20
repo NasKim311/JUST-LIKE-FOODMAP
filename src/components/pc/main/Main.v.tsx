@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Button } from 'react-bootstrap'
 
 const MainV = ({
     t, 
@@ -7,11 +8,11 @@ const MainV = ({
 }: {
     t: string,
     locale: string,
-    params: object
+    params: object,
 }) => (
     <>
-        <main id="main" className="container login">
-            <div> 페이지입니다.</div>
+        <main id="main" className="container">
+            <div> PC바디입니다.</div>
         </main>
     </>
 )
