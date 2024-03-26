@@ -31,16 +31,11 @@ const MainV = ({
                     <div className="col-6 p-2">
                         <div className="card">
                             <div className="card-body">
-                                Start creating your amazing application!
+                                pass 인증 결과 : {params.isAuthNicePass}
                             </div>
                         </div>
                     </div>
                     <div className="col-6 p-2">
-                        <div className="card">
-                            <div className="card-body">
-                                Start creating your amazing application!
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

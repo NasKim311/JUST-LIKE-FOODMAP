@@ -59,6 +59,14 @@ export function middleware(request: NextRequest) {
         const requestHeaders = new Headers(request.headers)
         requestHeaders.set('x-pathname', pathname)
 
+        // 에러 내용 : `x-forwarded-host` and `host` headers do not match `origin` header from a forwarded Server Actions request. Aborting the action.
+        // ios, safari 는 패스 인증시 post로 요청옴. 그 경우 get으로 변경후 리다이렉트시킴.(post로 요청올 시, 에러 발생함.)
+        // 혹시 모를 무한루프를 대비하기 위해 다른 경로로 리다이렉트 시킴.
+        if(request.method == 'POST' && (pathname.indexOf('/extern/pass/auth/') > -1)) {            
+            // return NextResponse.redirect(new URL(`/extern/pass/ios/auth/${pathname.replace('/extern/pass/auth/', '')}`, request.url), 301)            
+            return NextResponse.redirect(new URL(pathname, request.url), 301)            
+        }
+
         return NextResponse.next({
             request: {
                 headers: requestHeaders,

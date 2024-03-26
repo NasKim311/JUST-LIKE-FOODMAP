@@ -9,6 +9,8 @@ interface Params {
     error: any
     isLoaded: boolean
 
+    isAuthNicePass: string
+
 }
 
 function Main(props: any) {
@@ -16,8 +18,11 @@ function Main(props: any) {
         error: null,
         isLoaded: false,
 
+        isAuthNicePass: ''
+
     }
     const [params, setParams] = useState(initParams)
+    console.log('params', params)
 
     /****************************************************************************************** */
     /************************************** STATE ********************************************* */
